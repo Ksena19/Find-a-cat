@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	  <link rel="icon" type="image/gif" href="image/Package.ico" />
+	  <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+</head>
+
+	
+		<title>Find a cat</title>
+</head>
+<body>
+
+
+<script src="http://s.codepen.io/assets/libs/prefixfree.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<section class="main">
+<p class="alert">Click on any door and try to guess where the cat is</p>
+        <div class="perspective" onclick="openDoor(this)">
+            <div class="thumb">
+            </div>
+        </div>
+        <div class="perspective1" onclick="openDoor(this)">
+            <div class="thumb">
+            </div>
+        </div>
+        <div class="perspective" onclick="openDoor(this)">
+            <div class="thumb">
+            </div>
+        </div>
+        <div class="perspective" onclick="openDoor(this)">
+            <div class="thumb">
+            </div>
+        </div>
+        </section>
+	  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        	function openDoor(field) {
+            var y = $(field).find(".thumb");
+            var x = y.attr("class");
+            if (y.hasClass("thumbOpened")) {
+                y.removeClass("thumbOpened");
+            }
+            else {
+                $(".thumb").removeClass("thumbOpened");
+                y.addClass("thumbOpened");
+            }
+        }
+       
+       var soundPlay = function() {
+
+       }
+
+   </script>
+</body>
+</html>
